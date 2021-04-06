@@ -1,0 +1,1 @@
+variables or method results to be displayed in the stack trace of the snapshot; click + to enter additional expressions

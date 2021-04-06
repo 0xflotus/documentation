@@ -1,0 +1,1 @@
+Ensure you've [configured piping](observability-integrations.md) from the IDE.

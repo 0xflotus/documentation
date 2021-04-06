@@ -1,0 +1,1 @@
+the time after which Lightrun ceases to track this action; defaults to 1 hour if not configured

@@ -1,0 +1,1 @@
+the quota (rate limit) is configured in the agent configuration file. **Ignore Quotas** defaults to off. Only users assigned the IGNORE-QUOTA role can perform this configuration; the checkbox is disabled for other users.

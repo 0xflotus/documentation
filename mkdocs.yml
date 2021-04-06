@@ -1,0 +1,150 @@
+
+site_name: Lightrun                
+site_description: Documentation for the Lightrun debugger
+site_author: Rachel Cheyfitz
+
+
+# Repository
+repo_name: lightrun-platform/lightrun-docs
+repo_url: https://github.com/lightrun-platform/lightrun-docs
+edit_uri: ""
+
+
+extra_javascript:
+  - js/ekko-lightbox.min.js
+
+extra_css:
+  - stylesheets/lightrun.css
+  - stylesheets/lightrun.scss
+  - stylesheets/ekko-lightbox.min.css
+
+theme:                 
+  name: material
+  logo: assets/images/logos.png
+  favicon: assets/images/favicon.png
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github
+  palette:            
+    scheme: lightrun
+  custom_dir: material
+
+  features:
+   # - navigation.tabs
+    - navigation.instant
+    - prev_next_buttons_location: top
+ #   - navigation.tabs.sticky: true
+ #   - navigation.sections: true
+  #  - prev_next_buttons_location: top
+   # - search.suggest: true
+    #- search.highlight: true
+
+    
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.emoji
+  - mdx_truly_sane_lists
+  - md_in_html
+  - attr_list
+  - meta
+  - pymdownx.betterem:
+      smart_enable: all
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+  
+nav:
+  - 'The Basics':
+    - 'Introduction' : 'index.md'
+    - 'Create Your Account' : 'createaccount.md'
+    - 'Install the Agent' : 'install.md' 
+  - 'Using Lightrun':
+    - 'Plugins' :
+      - 'Install the Plugin' : 'install-client.md'
+      - 'Authenticate Lightrun' : 'connectIntelliJ.md'
+      - 'Getting Started' : 'plugin.md'
+      - 'Actions' : 'LightrunActions.md'
+      - 'Console & Snapshot Views' : 'LightrunConsole.md'
+    - 'Data Management' :
+      - 'Actions' : 'actions.md'
+      - 'Agent Logs' : 'agentadmin-dlogs.md'
+      - 'Snapshots Data' : 'snapshots.md'
+
+    - 'Exceptions & Monitoring' :
+      - 'Exceptions: Overview' : 'adminexceptions.md'
+      - 'Configure the Agent' : 'adminexceptions-configure.md'
+      - 'View Exceptions from the Browser' : 'exceptions-browser.md'
+      - 'View Exceptions from the IDE' : 'userexceptions.md'
+      - 'Alerting' : 'alerts.md'   
+  - 'Service Administration' :
+    - 'Server Configuration' :
+      - 'Overview' : 'integration.md'
+      - 'Tomcat' : 'tomcat.md'
+      - 'Glassfish' : 'glassfish.md'
+      - 'Wildfly' : 'wildfly.md'
+      - 'Jetty' : 'jetty.md'
+      - 'Weblogic' : 'weblogic.md' 
+    - 'Agent Administration' :
+      - 'Overview' : 'agentadmin.md'
+      - 'Install the Agent' : 'install-agent.md' 
+      - 'Configure Maven & Gradle' : 'maximize.md'
+      - 'Agents' : 'agentadmin-agentprops.md'
+      - 'Tags' : 'agentadmin-tagging.md'
+      - 'Services' : 'manage-services.md' 
+      - 'Manage Data Security' : 'data-security.md'
+    - 'Observability Integrations' :
+      - 'Overview' : 'observability-integrations.md'
+      - 'Statsd' : 'statsd.md'
+      - 'Prometheus' : 'prometheus.md'
+      - 'Datadog' : 'datadog.md'
+      - 'Logz.io' : 'logzio.md'   
+
+    - 'Lightrun Administration' :
+      - 'Overview' : 'useradmin.md'
+      - 'Manage Users and Roles' : 'useradmin-roles.md'
+      - 'Audit System Use' : 'audit-use.md'
+
+      - 'Collect Logs' : 'data-logs.md'
+  - 'CLI' :
+      - 'Managers CLI Reference' : 'cli-manage.md'  
+      - 'Users CLI Reference' : 'cli.md'
+  - 'Troubleshooting' : 'troubleshooting.md'
+##  - 'Credits' : 'opensource.md'
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Lightruntech?s=20
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/Lightruntech/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/lightruntech/?originalSubdomain=il
+      
+      
+      
+      
+
+# Copyright
+copyright: Copyright &copy; 2019 - 2021 Lightrun
